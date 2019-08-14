@@ -1,0 +1,302 @@
+.dashb-content{
+    padding-top: 15px;
+}
+.tcontainer {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+#toggle {
+    background-color: #333;
+}
+
+#sidebar,
+#scontent {
+    height: 100%;
+    overflow: auto;
+    float: left;
+    transition: width 1s;
+    padding: 15px;
+}
+
+#sidebar {
+    background-color: darkcyan;
+    width: 30%;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .sidebar-content ul.sidebar-sbar li.content .text {
+        display: block;
+    }
+
+    .sidebar-content ul.sidebar-sbar li.content .icon {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-content ul.sidebar-sbar li.content .text {
+        display: block;
+    }
+
+    .sidebar-content ul.sidebar-sbar li.content .icon {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-content ul.sidebar-sbar li.content {
+        display: block;
+    }
+
+    .sidebar-content ul.sidebar-sbar li.content .icon {
+        display: block;
+    }
+}
+
+@media (min-width: 480px) {
+    .sidebar-content ul.sidebar-sbar li.content .text {
+        display: block;
+    }
+
+    .sidebar-content ul.sidebar-sbar li.content .icon {
+        display: block;
+    }
+}
+
+#sidebar.collapsed {
+    width: 16%;
+}
+
+#scontent.expanded {
+    width: 84%;
+}
+#sidebar.collapsed .sidebar-content{
+    width: 45%
+}
+#scontent {
+    background: gray;
+    width: 70%;
+}
+
+.tcontainer {
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+.sidebar-header {
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+#dash {
+    font-size: 18;
+    color: #9d9d91;
+    width: 70%;
+}
+
+.sidebar-content {
+    font-size: 18;
+    color: #9d9d95;
+    background-color: #333;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    head a.navbar-brand {
+        display: none;
+    }
+}
+
+button#toggle {
+    background: aqua;
+    width: 30px;
+}
+
+.sidebar-separator {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+#icon {
+    width: 30%;
+    text-align: center;
+}
+
+.sidebar-sbar {
+    list-style: none;
+}
+
+li.s-content a.s-text, #dash {
+    text-decoration: none;
+    cursor: pointer;
+    color: #9d9d91;
+}
+
+li.s-content {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 10px 0px;
+}
+.sidebar-content ul{
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+li.s-content.lactive, .sidebar-header.lactive{
+    border: 1px solid #9d9d95;
+    background-color: #000;
+}
+.sidebar-header.lactive .tractor{
+    background-color: darkgrey!important;
+    color: #000!important;
+}
+.tractor{
+    cursor: pointer;
+    margin-top:-10px;
+    float:right;
+    background-color:#1a1a1a;
+    border-radius:5px;
+    color:#9d9d91;
+    padding:0 5px 0px 5px;
+    font-size:29px;
+}
+#icon{
+    float:left;
+    position:relative;
+}
+#text{
+    float:left;
+    position:relative;
+}
+li a #icon{
+    width: 68.25px;
+}
+/* Dashboard styles */
+.dashb-content{
+    text-align: left;
+}
+.dashb-ten-img{
+    background-color: #ffffff;
+    fill-opacity: 0.1;
+    margin: 20px 40% 10px 40%;
+    border-radius: 40%;
+    height: 120px;
+    width: 130px;
+    padding: 15px;
+    border: 1px solid chocolate;
+    text-align: center;
+}
+.dashb-ten-img img{
+    border-radius: 40%;
+    margin: -16px -40% -10px -40%;
+}
+.dashb_ten_img div.upload_btn{
+    position: relative;
+}
+.mths-pd{
+    background-color: none;
+    margin-left: 20px!important;
+}
+.outstanding-bal{
+    background-color: none;
+    color: crimson;
+    margin-left: 20px!important;
+}
+.days_left{
+    background-color: none;
+    margin-left: 20px!important;
+}
+.days_left label{
+    color: orange;
+}
+.dashb-content .left{
+    width: 50%!important;
+    position: relative!important;
+    float: left!important;
+}
+.dashb-content .right{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+.dashb-content table{
+    width: 100%;
+}
+.dashb-content table td{
+    width: 50%;
+}
+.location{
+    font-size: 22;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.labelt{
+    font-size: 25 !important;
+}
+.value{
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.number{
+    font-size: 22;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rnt-per-month{
+    font-size: 22;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Payment Details Styles */
+.payment_details{
+    padding: 15px;
+}
+.payment_details table th{
+    text-align: center!important;
+}
+.payment_details table{
+    background-color: gainsboro;
+    text-align: center!important;
+}
+.payment_details table.heading tr{
+    border: 1px solid transparent;
+}
+.payment_details table.heading td{
+    border: 1px solid transparent;
+}
+.payment_details table.heading td.edit_btn a{
+    text-decoration: none;
+}
+.edit_btn{
+    background-color:darkgrey;
+    color:#000000;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.edit_btn:hover{
+    background-color: #1a1a1a;
+    color:white;
+}
+.edit_btn:hover a{
+    color: white;
+}
+.pDContent{
+    background-color: gainsboro;
+    padding-left:10px;
+    padding-right: 10px;
+}
+tr.header{
+    border-bottom: 1px solid #000000!important;
+}
+/* Pay Rent Styles */
+.pr_header{
+    padding: 15px;
+    font-size: 28;
+}
+.pr_content{
+    padding: 5px;   
+}
