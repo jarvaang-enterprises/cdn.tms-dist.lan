@@ -1,0 +1,41 @@
+container {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*
+ * Container gallery
+*/
+#galleryCont {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    z-index: 1;
+}
+
+/*
+ * Gallery with all slides
+ */
+#gallery {
+    width: 100px;
+    height: auto;
+    padding: 50px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+/*
+ * Individual Slides
+ */
+
+#gallery img{
+    float: left;
+    height: auto;
+    margin
+}

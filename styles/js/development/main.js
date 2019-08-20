@@ -1,29 +1,29 @@
 function loadprerequisites() {
-    $(document).ready(function () { 
+    $(document).ready(function () {
         log("Loading required files for site to run.");
-        log("Loading header files..."); 
-        $("#header").load("/includes/header.inc.php"); 
-        log("Loading dialog files in modals...") 
-    }); 
-    $("#header").ready(function () { 
-        $("#dialog").load("/includes/dialogs.inc.php"); 
-        log("Loading content into site...") 
-    }); 
+        log("Loading header files...");
+        $("#header").load("/includes/header.inc.php");
+        log("Loading dialog files in modals...")
+    });
+    $("#header").ready(function () {
+        $("#dialog").load("/includes/dialogs.inc.php");
+        log("Loading content into site...")
+    });
     $("#dialog").ready(function () {
-        $("#content").load("/includes/main_content.inc.php"); 
-        log("Loading slideshow.."); 
-        setInterval(function () { 
-            $("#content").load("/includes/main_content.inc.php") 
+        $("#content").load("/includes/main_content.inc.php");
+        log("Loading slideshow..");
+        setInterval(function () {
+            $("#content").load("/includes/main_content.inc.php")
         }, 36E5)
-    }); 
-    $("#content").ready(function () { 
-        $("#photos").load("/includes/slideshow.php") 
-    }); 
+    });
+    $("#content").ready(function () {
+        $("#photos").load("/includes/slideshow.php")
+    });
     var g = document.getElementById("id01"), e = document.getElementById("id02"); window.onclick = function (c) { c.target == g ? g.style.display = "none" : c.target == e && (e.style.display = "none") }
 }
 function log(g) { console.log(g) }
 
-function plusSlides(g) { showSlides(slideIndex += g) }function isLoggedIn() { return !0 };
+function plusSlides(g) { showSlides(slideIndex += g) } function isLoggedIn() { return !0 };
 var img = "https://www.tms.lan/favicon.ico";
 function notifyMe(a) {
     if (notificationdisplayed == false) {
@@ -62,4 +62,18 @@ function notify(text) {
             }
         });
     }
+}
+
+ten = () => {
+    $('#verify').css({
+        display: "none"
+    });
+    $('#LTContent').css({
+        display: "block"
+    });
+    $("#LTContent").load("/includes/man/tenants.inc.php");
+    log("Loading slideshow..");
+    setInterval(function () {
+        $("#LTContent").load("/includes/man/tenants.inc.php")
+    }, 36E5);
 }
