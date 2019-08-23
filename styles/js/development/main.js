@@ -17,7 +17,10 @@ function loadprerequisites() {
         }, 36E5)
     });
     $("#content").ready(function () {
-        $("#photos").load("/includes/slideshow.php")
+        $("#photos").load("/tests/gallery.html");
+        $('#photos').css({
+            height: $('#gallery').height(),
+        })
     });
     var g = document.getElementById("id01"), e = document.getElementById("id02"); window.onclick = function (c) { c.target == g ? g.style.display = "none" : c.target == e && (e.style.display = "none") }
 }
