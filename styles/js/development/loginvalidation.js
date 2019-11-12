@@ -171,6 +171,6 @@ function checkEmail(email, callback){
             }
             callback(flag);
         },
-        error: function(){log("Error occured: In checking email." + email)}
+        error: function(){log("Error occured: In checking email. " + email)}
     });
 }

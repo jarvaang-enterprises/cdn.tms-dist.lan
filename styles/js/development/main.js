@@ -74,6 +74,9 @@ ten = () => {
     $('#LTContent').css({
         display: "block"
     });
+    $('#ten_list').css({
+        display: "block"
+    });
     $("#LTContent").load("/includes/man/tenants.inc.php");
     log("Loading slideshow..");
     setInterval(function () {

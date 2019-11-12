@@ -4,5 +4,9 @@ function verdata(){
 }
 function verify($id){
     log('Verifying user');
+    $('#status').css({
+        display: 'block'
+    })
     $('#status').load('/actions/verify.php',"id="+$id);
+    setTimeout(fadeout, 3000);
 }
