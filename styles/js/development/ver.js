@@ -8,5 +8,4 @@ function verify($id){
         display: 'block'
     })
     $('#status').load('/actions/verify.php',"id="+$id);
-    setTimeout(fadeout, 3000);
 }

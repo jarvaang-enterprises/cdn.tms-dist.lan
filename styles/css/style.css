@@ -70,8 +70,10 @@
 .tms-modal#id03{
     background-color: #000;
     opacity: 0.8;
-    width: 400px;
-    margin-left: 25%;
+    width: 100%;
+}
+input[img_up_area]{
+    content: none;
 }
 .back{
     background-color: beige;

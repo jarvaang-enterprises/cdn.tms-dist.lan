@@ -4,6 +4,12 @@ var left, opacity, scale;
 var old_width = 0, new_width;
 var animating;
 var ref = null;
+$('document').on('load',_=>{
+    if(window.cont != null) {
+        ref = window.cont
+        log(ref)
+    }
+})
 $('#email').val('');
 $(".next").click(function(){
     current_fs = $(this).parent();
