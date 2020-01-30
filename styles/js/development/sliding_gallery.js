@@ -78,7 +78,6 @@ function init() {
   // Bind the moveRight() and moveLeft() functions to
   // the swipeLeft and swipeRight events respectively.
   // (IE chokes on the swipe plugin, so skip this code on IE)
-
   if ( !$.browser.msie ) {
 
     $('#gallery').swipe( {

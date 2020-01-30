@@ -62,7 +62,7 @@
     border: none;
     outline: none;
     color: #ffffff;
-    background: transparent url(images/blank.gif);
+    background: transparent;
     font-size: 100px;
     font-family: 'Courier New', Courier, fixed;
     opacity: 0;
@@ -93,7 +93,7 @@
 #caption {
     position: absolute;
     z-index: 2;
-    /* bottom: 50%; */
+    bottom: 50%;
     width: 100%;
     color: brown;
     text-align: center;

@@ -211,6 +211,9 @@ body {
      color: #fff!important;
      background-color: #4caf50!important;
  }
+ .tms-search{
+     background-color: darkgoldenrod;
+ }
  .tms-padding {
     padding:8px 16px!important
  }
